@@ -80,8 +80,8 @@
 		</div>
 	</div>
 	<div id="about" itemscope itemtype="https://schema.org/Person">
-		<div class="picture left" itemprop="image">
-			<img src="./assets/images/nina-1920.webp" alt="photo de la photographe" srcset="./assets/images/nina-1180.webp 1180w, ./assets/images/nina-1000.webp 1000w,
+		<div class="picture left" >
+			<img src="./assets/images/nina-1920.webp" itemprop="image" alt="photo de la photographe" srcset="./assets/images/nina-1180.webp 1180w, ./assets/images/nina-1000.webp 1000w,
 		./assets/images/nina-650.webp 650w">
 		</div>
 		<div id="about-me" itemscope itemtype="https://schema.org/CreativeWork">
@@ -157,12 +157,12 @@
 		</div>
 	</div>
 	<div id="services">
-		<h2 class="title">Mes services</h2>
-		<div class="container">
-			<div class="service">
+		<h2 class="title" itemscope itemtype="https://schema.org/Service">Mes services</h2>
+		<div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+			<div class="service" itemscope itemtype="https://schema.org/CreativeWork" >
 				<div class="service__description">
-					<h3>Shooting photo</h3>
-					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
+					<h3 itemprop="offers">Shooting photo</h3>
+					<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
 						Île-de-France pour réaliser vos photos</p>
 				</div>
 				<div class="service__price">
