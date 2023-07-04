@@ -3,6 +3,35 @@
 
 <head>
 	<title>Nina Carducci</title>
+	<script type="application/ld+json">
+		{
+			"@context" : "https://schema.org",
+			"@type" : "ProfessionalService",
+			"name" : "Nina Carducci", 
+			"address" : {
+				"@type" : "PostalAddress",
+				"streetAddress" : "68 avenue Alsace-Lorraine",
+				"addressLocality" : "Bordeaux",
+				"postalCode" : "33200",
+				"addressCountry" : "FR"
+			}, 
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday",
+						"Friday"
+					],
+					"opens": "10:00",
+					"closes": "19:00"
+				}
+			],
+			"telephone" : "05 56 67 78 89"
+		}
+	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"
 		content="Site web de la photographe Nina Carducci, qui repertorie ses services et son portfolio.">
@@ -79,19 +108,22 @@
 			</button>
 		</div>
 	</div>
-	<div id="about" itemscope itemtype="https://schema.org/Person">
-		<div class="picture left" >
-			<img src="./assets/images/nina-1920.webp" itemprop="image" alt="photo de la photographe" srcset="./assets/images/nina-1180.webp 1180w, ./assets/images/nina-1000.webp 1000w,
+	<div id="about">
+		<div class="picture left">
+			<img src="./assets/images/nina-1920.webp" alt="photo de la photographe" srcset="./assets/images/nina-1180.webp 1180w, ./assets/images/nina-1000.webp 1000w,
 		./assets/images/nina-650.webp 650w">
 		</div>
-		<div id="about-me" itemscope itemtype="https://schema.org/CreativeWork">
+		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
-			<h3 class="about-me__introduction" itemprop="abstract">Devenir photographe était pour moi une évidence. Comme si j’y étais
+			<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
 				prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
 				immortels, voilà ce qui me fait vibrer.</h3>
-			<p itemprop="abstract" >Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le
+			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le
 				figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux,
-				ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+				ou le partager au plus grand nombre.
+				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma
+				technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la
+				tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
 	</div>
 	<div id="gallery">
@@ -156,39 +188,40 @@
 			</figure>
 		</div>
 	</div>
-	<div id="services" itemscope itemtype="https://schema.org/Service">
+	<div id="services">
 		<h2 class="title">Mes services</h2>
-		<div class="container" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
-			<div class="service" itemscope itemtype="https://schema.org/CreativeWork" >
+		<div class="container">
+			<div class="service">
 				<div class="service__description">
-					<h3 itemprop="offers">Shooting photo</h3>
-					<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
+					<h3>Shooting photo</h3>
+					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
 						Île-de-France pour réaliser vos photos</p>
 				</div>
-				<div class="service__price" itemscope itemtype="https://schema.org/Offer">
-					<h4 itemprop="price" >350€/demi journée</h4>
+				<div class="service__price">
+					<h4>350€/demi journée</h4>
 					<span>Matériel, déplacement inclus</span>
 				</div>
+
 			</div>
-			<div class="service" temscope itemtype="https://schema.org/CreativeWork">
+			<div class="service">
 				<div class="service__description">
-					<h3 itemprop="offers" >Retouches</h3>
-					<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
+					<h3>Retouches</h3>
+					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
 						optimal pour vos publications</p>
 				</div>
-				<div class="service__price" itemscope itemtype="https://schema.org/Offer">
-					<h4 itemprop="price" >50€/photo</h4>
+				<div class="service__price">
+					<h4>50€/photo</h4>
 					<span>2 AR par photo</span>
 				</div>
 			</div>
-			<div class="service" temscope itemtype="https://schema.org/CreativeWork">
+			<div class="service">
 				<div class="service__description">
-					<h3 itemprop="offers" >Album photos</h3>
-					<p itemprop="description" >Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un
+					<h3>Album photos</h3>
+					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un
 						album photo personnalisé</p>
 				</div>
-				<div class="service__price" itemscope itemtype="https://schema.org/Offer">
-					<h4 itemprop="price" >400€ album A4</h4>
+				<div class="service__price">
+					<h4>400€ album A4</h4>
 					<span>30 pages recto/verso</span>
 				</div>
 			</div>
